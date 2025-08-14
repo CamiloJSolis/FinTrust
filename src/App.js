@@ -1,27 +1,26 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import "./App.css";
 
-// export default function login() {
-  
-// }
+const Login = (codigo, usuario, contrasenia) => {
+  console.log('Iniciando sesión con:', { codigo, usuario, contrasenia });
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <link rel="stylesheet" href="App.css"/>
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>FinTrust - Inicio de Sesión</h1>
       </header>
-      <bosy>
 
       <div>
-        <form>
+        <form action={Login}>
           <input type="text" name="codigo" placeholder="Código" />
           <input type="text" name="usuario" placeholder="Usuario"/>
           <input type="text" name="contrasenia" placeholder="Contraseña" />
           <button type="submit" disabled>Iniciar Sesión</button>
         </form>
       </div>
-      </bosy>
     </div>
   );
 }

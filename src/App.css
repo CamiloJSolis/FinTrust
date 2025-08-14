@@ -1,11 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+.App {
+  text-align: center;
 
-:root {
-  --primary-green: #4CAF50;      /* Buttons, headers */
-  --secondary-green: #81C784;    /* Background accents */
-  --accent-yellow: #FFD54F;      /* Highlights */
-  --sky-blue: #A7D8F9;           /* Background gradient */
-  --earth-brown: #5D4037;        /* Footer text or accents */
-  --text-dark: #333333;          /* General text */
-  --white: #ffffff;              /* Card background */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f2f2f2, #e0e0e0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+main {
+  padding: 20px;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+  margin: 5px auto;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button:enabled {
+  background-color: #003865;
+
 }
